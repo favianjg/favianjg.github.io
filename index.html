@@ -6,11 +6,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Favian Gozali</title>
 </head>
-<body>
+<body class="bg-gray-100">
     <div class="flex flex-row sticky top-0">
-        <ul class="font-medium flex flex-row mx-auto mt-2 rounded-xl border border-black divide-x-2 divide-gray-200">
+        <ul class="bg-white font-medium flex flex-row mx-auto mt-2 rounded-xl border border-black divide-x-2 divide-gray-200">
             <li class="basis-auto w-30 block py-2 px-3 text-2xl text-gray-900 hover:text-white hover:bg-blue-500 hover:rounded-l-xl">
-                <a href="#">About me</a>
+                <a href="#about-me">About me</a>
             </li>
             <li class="basis-auto w-54 block py-2 px-3 text-2xl text-gray-900 hover:text-white hover:bg-blue-500">
                 <a href="#">Work Experience</a>
@@ -29,7 +29,70 @@
             </li>
         </ul>
     </div>
-    <div class="container mx-auto mt-5" id="page-content-container">
+    <div class="container bg-white w-9/12 h-full shadow-lg rounded-lg mx-auto mt-5" id="page-content-container">
+        <div class="grid grid-cols-10 gap-4" id="about-me">
+            <div class="col-span-4 ml-2" id="left-content">
+                <div class="text-center text-3xl font-extrabold mt-4">
+                    <p>PERSONAL INFORMATION</p>
+                </div>
+                <hr class="my-4 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-50">
+                <div class="w-full inline-flex" id="personal-info-container">
+                    <div class="w-56 h-72 float-left" id="image-container">
+                        <img class="border-solid border-2 object-scale-down rounded" src="images/photo.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="ml-5 float-right" id="self-info-container">
+                        <dl>
+                            <dt class="font-bold">Full Name</dt>
+                            <dd>Favian Javiar Gozali</dd>
+                            <dt class="font-bold">Email</dt>
+                            <dd class="hover:text-blue-500">
+                                <a href="emailto:rafcath95@gmail.com">rafcath95@gmail.com</a>
+                            </dd>
+                            <dt class="font-bold">LinkedIn</dt>
+                            <dd class="hover:text-blue-500">
+                                <a href="https://www.linkedin.com/in/favianjg/">https://www.linkedin.com/in/favianjg/</a>
+                            </dd>
+                            <dt class="font-bold">GitHub</dt>
+                            <dd class="hover:text-blue-500">
+                                <a href="https://github.com/favianjg">https://github.com/favianjg</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-6" id="right-content">
+                <div class="text-center text-3xl font-extrabold mt-4">
+                    <p>MY STORY</p>
+                </div>
+                <div class="w-4/6 mx-auto mt-2">
+                    <p>
+                        I was born in Indonesia and moved to Germany in 2015 to create a better future for myself.
+                        Even though the journey was long and hard, i would do it all over again.
+                        Now i work my dream job as a programmer, and i love every second of it.
+                        Hard work, dedication, creativity, and resilience are principles i hold near and dear,
+                        especially for my own work.
+                        <br>
+                        Coding for me is like a super fun challenging puzzle, but the result of solving this puzzle
+                        is nothing short of magic.
+                        Creating movies, memes, games, gears, etc. out of just simple commands and a lot of 0s and 1s.
+                        Now im looking for new challenges to expand my knowledge,
+                        improve myself and gather more programming experience.
+                    </p>
+                </div>
+                <div class="w-full mx-auto mb-4">
+                    <div class="text-center text-lg font-bold mt-4">
+                        <p>TOO LONG DIDNT READ</p>
+                    </div>
+                    <div class="w-2/6 mx-auto mt-2 justify-center">
+                        <a href="cv/" download="CV_favian_english.pdf">
+                            <button class="w-full h-8 bg-gray-300 rounded hover:accent-black-500">
+                                Download CV
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
