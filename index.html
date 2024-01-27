@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Favian Gozali</title>
+    <title>Online Resume</title>
 </head>
 <body class="bg-gray-100">
     <div class="flex flex-row sticky top-0">
@@ -13,10 +13,10 @@
                 <a href="#about-me">About me</a>
             </li>
             <li class="basis-auto w-54 block py-2 px-3 text-2xl text-gray-900 hover:text-white hover:bg-blue-500">
-                <a href="#">Work Experience</a>
+                <a href="#work-experience">Work Experience</a>
             </li>
             <li class="basis-auto w-34 block py-2 px-3 text-2xl text-gray-900 hover:text-white hover:bg-blue-500">
-                <a href="#">Education</a>
+                <a href="#education">Education</a>
             </li>
             <li class="basis-auto w-64 block py-2 px-3 text-2xl text-gray-900 hover:text-white hover:bg-blue-500">
                 <a href="#">Skills and Languages</a>
@@ -29,11 +29,11 @@
             </li>
         </ul>
     </div>
-    <div class="container bg-white w-9/12 h-full shadow-lg rounded-lg mx-auto mt-5" id="page-content-container">
+    <div class="container bg-white w-fit h-full shadow-lg rounded-lg mx-auto mt-5" id="about-me-container">
         <div class="grid grid-cols-10 gap-4" id="about-me">
-            <div class="col-span-4 ml-2" id="left-content">
+            <div class="col-span-4 ml-6" id="left-content">
                 <div class="text-center text-3xl font-extrabold mt-4">
-                    <p>PERSONAL INFORMATION</p>
+                    <p>CONTACT INFORMATION</p>
                 </div>
                 <hr class="my-4 h-0.5 border-t-0 bg-neutral-200 opacity-100 dark:opacity-50">
                 <div class="w-full inline-flex" id="personal-info-container">
@@ -92,6 +92,112 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container bg-white h-full shadow-lg rounded-lg mx-auto mt-5" id="work-experience-container">
+        <div class="grid grid-cols-10 gap-4" id="work-experience">
+            <div class="col-span-10 text-4xl font-extrabold mx-auto mt-2">
+                <p>WORK EXPERIENCE</p>
+            </div>
+            <div class="col-span-10">
+                <div class="text-3xl font-extrabold mt-2 ml-7">
+                    <p>Full-Stack Software Engineer</p>
+                </div>
+                <div class="text-xl font-bold mt-2 ml-7">
+                    <p>Solute GmbH (2020-now)</p>
+                </div>
+                <hr class="my-4 h-0.5 w-11/12 mx-auto border-t-0 bg-neutral-200 opacity-100 dark:opacity-50">
+                <div class="text-xl mt-2 ml-7 mb-2">
+                    <p>
+                        Developing web-based internal tools used to monitor, correct, and review results
+                        produced by company's Machine Learning algorithm. Maintaning and updating Databases using
+                        Alembic, Postgres, and elastic Search. Updating and refactoring legacy projects.
+                        Unit-testing using Magic Mock, and Pytest. Services monitoring using Grafana.
+                    </p>
+                    <br>
+                    <dl>
+                        <dt class="font-bold">CI/CD Pipeline and Agile Development</dt>
+                        <dt class="font-bold">Programming Language:</dt>
+                        <dd>Python, Javascript, CSS, HTML, Bash</dd>
+                        <dt class="font-bold">Frameworks/Libs:</dt>
+                        <dd>Pandas, Numpy, Ember Js, Tailwind CSS, Pyramid, Pytest, PostgreSQL</dd>
+                        <dt class="font-bold">Organisation/Teamwork:</dt>
+                        <dd>Git, Gitlab, Confluence, and JIRA</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-span-10 mb-2">
+                <div class="text-3xl font-extrabold mt-2 ml-7">
+                    <p>Cloud Engineer Intern</p>
+                </div>
+                <div class="text-xl font-bold mt-2 ml-7">
+                    <p>B4B-Solutions (2019-2020)</p>
+                </div>
+                <hr class="my-4 h-0.5 w-11/12 mx-auto border-t-0 bg-neutral-200 opacity-100 dark:opacity-50">
+                <div class="text-xl mt-2 ml-7 mb-2">
+                    <p>
+                        Developing internal tools for accounting, project management, and other topics according to
+                        customer's needs. 3rd-Party tools/services integration (i.e. REST-APIs).
+                    </p>
+                    <br>
+                    <dl>
+                        <dt class="font-bold">CI/CD Pipeline and Agile Development</dt>
+                        <dt class="font-bold">Programming Language:</dt>
+                        <dd>ABSL</dd>
+                        <dt class="font-bold">Frameworks/Libs:</dt>
+                        <dd>SAP ABSL IDE</dd>
+                        <dt class="font-bold">Organisation/Teamwork:</dt>
+                        <dd>JIRA, and internal SAP management tool</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-white h-full shadow-lg rounded-lg mx-auto mt-5" id="education-container">
+        <div class="grid grid-cols-10 gap-4" id="education">
+            <div class="col-span-10 text-4xl font-extrabold mx-auto mt-2">
+                <p>EDUCATION</p>
+            </div>
+            <div class="col-span-10">
+                <div class="text-3xl font-extrabold mt-2 ml-7">
+                    <p>Bachelor of Applied Science IT Security</p>
+                </div>
+                <div class="text-xl font-bold mt-2 ml-7">
+                    <p>Hochschule Albstadt-Sigmaringen (2016-2020)</p>
+                </div>
+                <hr class="my-4 h-0.5 w-11/12 mx-auto border-t-0 bg-neutral-200 opacity-100 dark:opacity-50">
+                <div class="text-xl mt-2 ml-7 mb-2">
+                    <p>
+                        Thesis subject "Cryptography: Quantum Computer vs Classical Computer"
+                    </p>
+                        <br>
+                    <p class="font-bold">Final Grade: 2.1</p>
+                </div>
+            </div>
+            <div class="col-span-10 mb-2">
+                <div class="text-3xl font-extrabold mt-2 ml-7">
+                    <p>T-Fach studienerlaubnis</p>
+                </div>
+                <div class="text-xl font-bold mt-2 ml-7">
+                    <p>Studienkolleg Wismar (2015-2016)</p>
+                </div>
+                <hr class="my-4 h-0.5 w-11/12 mx-auto border-t-0 bg-neutral-200 opacity-100 dark:opacity-50">
+                <div class="text-xl mt-2 ml-7 mb-2">
+                    <p class="font-bold">Final Grade: 1.1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-white h-full shadow-lg rounded-lg mx-auto mt-5" id="skills-container">
+        <div class="grid grid-cols-10 gap-4" id="skills">
+        </div>
+    </div>
+    <div class="container bg-white h-full shadow-lg rounded-lg mx-auto mt-5" id="hobbies-container">
+        <div class="grid grid-cols-10 gap-4" id="hobbies">
+        </div>
+    </div>
+    <div class="container bg-white h-full shadow-lg rounded-lg mx-auto mt-5" id="contact-container">
+        <div class="grid grid-cols-10 gap-4" id="contact">
         </div>
     </div>
 </body>
